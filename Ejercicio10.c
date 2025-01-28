@@ -37,6 +37,6 @@ int main(void)
 
     /*Calculamos el total a pagar*/
     preciototal=preciototal-porce10+porce16;
-    printf("\n \tTOTAL A PAGAR  \t%.2f ",preciototal);
+    printf("\n\t TOTAL A PAGAR  \t%.2f ",preciototal);
 
 }

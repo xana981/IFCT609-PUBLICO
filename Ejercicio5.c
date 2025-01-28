@@ -17,5 +17,5 @@ int main(void)
     /*Calcular el coste*/
     total=precio*cantidad;
     printf("\n El comprador debe abonar: %.2f",total);    
-    /*return(0);*/
+    return(0);
 }
