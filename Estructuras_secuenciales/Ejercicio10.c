@@ -8,7 +8,7 @@ de articulos que desean y el dto aplicar sobre la cantidad inicial*/
 int main(void)
 {
 
- /*Incicalizamos variables y preguntamos por las variables*/
+    /*Inicializamos variables y preguntamos por las variables*/
     int codigo,cant;
     float precioud,porce10,porce16,preciototal;
 
