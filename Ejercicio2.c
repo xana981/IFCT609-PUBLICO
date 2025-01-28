@@ -12,6 +12,6 @@ int main(void)
 
     /*Calcular perimetro*/
     perimetro=lado*4;
-    printf("\n El perimetro del cuadrado es: %d",perimetro);    
- 
+    printf("\n El perimetro del cuadrado es: %d",perimetro);
+    return 0;    
 }

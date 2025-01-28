@@ -1,8 +1,10 @@
+
+/* Realizar la carga de dos números enteros por teclado e imprimir su suma y su producto.  */
 #include <stdio.h>
 
 int main(void)
 {
-    /* Para realizar las preguntas */
+    /* Para realizar las preguntas y definir variables*/
     int a,b,suma,producto;
     printf("\n Introduce el valor de a: ");
     scanf("%d",&a);

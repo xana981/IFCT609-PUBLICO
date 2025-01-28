@@ -22,6 +22,4 @@ int main(void)
     /*Calcula el producto del tercer y del segundo número*/
     producto=num3*num4;
     printf("\n El resultado del producto del tercer y cuarto valor es: %d",producto);
-
-
 }
