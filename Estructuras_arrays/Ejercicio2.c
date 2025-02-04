@@ -7,41 +7,81 @@ Mostrara los valores maximo y minimo de cada fila y da toda la tabla*/
 
 int main(void)
 {
-    int i,fila;
-    int num[3][2]={{10,11},{12,13},{14,15}};
+    //Declaramos variables y arrays
+    int i,j,fila;
+    int num[3][2];  
+    int mayor[3],menor[3];
 
-        printf(" 0-0 %d / ",num[0][0]);
-        printf(" 0-1 %d / ",num[0][1]);
-        printf(" 0-2 %d \n",num[0][2]);     
-
-        printf(" 1-0 %d / ",num[1][0]);
-        printf(" 1-1 %d / ",num[1][1]);
-        printf(" 1-2 %d \n",num[1][2]); 
-
-    for (int fila = 0; fila < 2; fila++)
+    //Bucle para preguntar los números
+    for (i=0;i<=2;i++)
     {
+        for (j=0;j<=1;j++)
+        {
+            printf("\nIntroduce numero %d ",j);
+            scanf("%d",&num[i][j]);
+        }
+
+    }
+    
+    /*Escribimos los valores     
+        printf(" 0-0 %d / ",num[0][0]);
+        printf(" 0-1 %d / \n",num[0][1]);
    
+        printf(" 1-0 %d / ",num[1][0]);     
+        printf(" 1-1 %d / \n",num[1][1]);
+
+        printf(" 2-0 %d / ",num[2][0]);
+        printf(" 2-1 %d /\n",num[2][1]); */
+
+    //Calculamos el mayor y el menos de cada fila y asignamos valores para saber cual es el mayor de casa fila
+    for (int fila = 0;fila < 3;fila++)
+    {
         if (num[fila][0] > num[fila][1])
         {
-            if (num[fila][0] > num[fila][2])
-                {
-                    printf("\n%d es el mayor de la fila %d",num[fila][0],fila);
-                }
-
+            printf("\n%d es el mayor y %d el menor de la fila %d",num[fila][0],num[fila][1],fila);
+            mayor[fila]=num[fila][0];
+            menor[fila]=num[fila][1];           
         }
-        else if (num[fila][1] > num[fila][2])
+        else 
         {
-            if (num[fila][1] > num[fila][0])
-                {
-                    printf("\n%d es el mayor de la fila %d",num[fila][1],fila);
-                }
-        }
-        else
-        {
-              printf("\n%d es el mayor de la primera fila %d",num[fila][2],fila);
+            printf("\n%d es el mayor y %d el menor de la fila %d",num[fila][1],num[fila][0],fila);  
+            mayor[fila]=num[fila][1];
+            menor[fila]=num[fila][0];           
         }
     }
 
-    //printf("El valor 2 de la fila 2 es %d ",num[0][1]);
+    //condicionamos para sacar el mayor
+    if (mayor[0]>mayor[1])
+    {
+        if (mayor[0]>mayor[2])
+        {
+            printf("\nEl MAYOR de la tabla es %d ",mayor[0]);     
+        }
+    }
+    else if (mayor[1]>mayor[2])
+    {
+        printf("\nEl MAYOR de la tabla es %d ",mayor[1]);    
+    }
+     else
+    {
+        printf("\nEl MAYOR de la tabla es %d ",mayor[2]);    
+    }       
+
+    //condicionamos para sacar el menor
+    if (menor[0]<menor[1])
+    {
+        if (menor[0]<menor[2])
+        {
+            printf("\nEl MENOR de la tabla es %d ",menor[0]);     
+        }
+    }
+    else if (menor[1]<menor[2])
+    {
+        printf("\nEl MENOR de la tabla es %d ",menor[1]);    
+    }
+     else
+    {
+        printf("\nEl MENOR de la tabla es %d ",menor[2]);    
+    }       
     return 0;
 }
