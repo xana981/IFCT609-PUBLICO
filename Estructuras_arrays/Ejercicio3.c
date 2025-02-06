@@ -7,15 +7,20 @@ que tiene dicha cadena e imprimirla al revés*/
 int main(void)
 {
     //Declaramos variables y arrays
-    int i,j,largo;
-    char cadena[50];  
-
+    int i,largo;
+    char cadena[20];  
+    
     //Preguntamos la cadena de caracteres
-    printf("Introduce una cadena de caracteres ");
-    scanf("%s",cadena[50]);
+    printf("Introduce una cadena de caracteres sin espacios ");
+    scanf("%s",&cadena);
 
     largo = strlen(cadena);
-    printf("\nEl numero de caracteres indroducido es: %d ",largo);
-    //printf("\nLos caracteres introducidos son: %s ",cadena[0]);
+    printf("\nEl numero de caracteres indroducido es: %d \n",largo);
+   
+    for (i=largo;i>=0;i--)
+    {
+       printf("%c",cadena[i]); 
+    }
+    //
 
 }
