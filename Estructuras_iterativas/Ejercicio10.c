@@ -26,7 +26,6 @@ int main(void)
     {
         case 1: printf("%d en binario es: ",numdec);
             numdec1=numdec;
-
             for (i=7;i>=0;i--)
 	        {
 		        k=numdec>>i;
