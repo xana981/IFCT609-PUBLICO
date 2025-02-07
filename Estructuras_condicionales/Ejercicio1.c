@@ -4,13 +4,13 @@ mensaje en pantalla indicando que debe abonar impuestos*/
 
 int main(void)
 {
-    /*Inicializamos variable y preguntamos*/
+    //Inicializamos variable y preguntamos
     int sueldo;
     
     printf("\n Introduce el sueldo ");
     scanf("%d",&sueldo);
    
-    /*Condicionamos*/
+    //Condicionamos
     if (sueldo>3000)
     {
         printf("\n\t Debe de abonar impuestos");

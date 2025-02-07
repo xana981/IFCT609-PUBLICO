@@ -3,7 +3,7 @@
 int main(void)
 {
     //definicion de variables que voy a utilizar
-    float suma =0;
+    float suma=0;
     float media;
     float max;
     float min;
